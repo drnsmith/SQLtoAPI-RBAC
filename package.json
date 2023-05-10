@@ -1,0 +1,35 @@
+{
+  "name": "mydbnode",
+  "version": "1.0.0",
+  "description": "RESTful API for user authentication",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drnsmith/mydbnode.git"
+  },
+  "keywords": [
+    "Node.js",
+    "PostgreSQL",
+    "RESTful",
+    "API",
+    "authentication",
+    "JSON",
+    "Web",
+    "Tokens",
+    "bcrypt"
+  ],
+  "author": "drnsmith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drnsmith/mydbnode/issues"
+  },
+  "homepage": "https://github.com/drnsmith/mydbnode#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.10.0"
+  }
+}
