@@ -45,6 +45,9 @@ _Step 2: Creating the API endpoints:_
 * Implement the logic for each endpoint using **Express.js** and **pg**.
  
 * Ensure each API endpoint has validation checks for user authentication and authorisation.
+> Note.
+> * In a Node.js and Express app, access for specific actions can be restricted (by using roles and permissions). **npm** packages such as **jsonwebtoken** can create and verify JSON Web Tokens (JWT) for authentication and authorisation. 
+> * API **middleware** restricts actions and veryfies authorisation based on user's role and permissions. For an unauthorised user, it returns a **403 Forbidden** response. 
 ---
 _Step 3: Writing the business logic:_
 * Define the functions to implement the business logic for each functional requirement.
@@ -67,5 +70,28 @@ _Step 6: Deploying the application:_
 * Ensure the server environment has the necessary dependencies and configurations to run the app.
 * Test the app in the production environment and fix any arising issues.
 ---
+## **Testing**
+After a successfully created  database connection pool using **pg** package, queries on the pool can be executed, for example, by using the **pool.query()**. 
+Next, run index.js, using Node.js with the command 
+```
+node index.js
+```
+This will start the server.
+
+> To test if the server is running, open a web browser and enter the URL http://localhost:3000. If it is, the response specified in the route handler function (i.e., 'Hello World!') will be visible.
+
+To test and demonstrate the results of executing the APIs using Postman:
+* Open Postman. In the top-left corner of the window, create a new request (click on "New").
+* Select "POST" as the HTTP method from the dropdown next to the URL field.
+* Enter the URL for the API endpoint in the field. For example, if the API endpoint for creating a new user is "http://localhost:3000/users", enter that in the URL field.
+* Select "Body" below the URL field.
+* Select "Raw", and choose "JSON" from the dropdown.
+* In the text area, enter sample data for creating a user.
+* Click "Send" to send the request.
+* A response will be visible in the "Response" tab below, indicating whether the request was successful (‘Hello World!) or otherwise. 
+* Repeat this process for testing other API endpoints.
+
+## **Contributing**
+* Pull requests are welcome. Please update code as appropriate.
 ### **LICENSE**
-* MIT
+* This project is MIT licensed.
