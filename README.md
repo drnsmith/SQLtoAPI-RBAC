@@ -1,4 +1,10 @@
 # **SQLtoAPI: Functional APIs with Role-Based Access Control from Postgres DB using NodeJS** 
+
+## Description
+* The app uses the **pg** library for connecting to a PostgreSQL database. 
+* It uses bcrypt for hashing passwords. 
+* It defines a users model with several methods for creating and querying users in the database. The model is exported for use in other modules. 
+
 ## **Motivation:**
 * Gaining practical experience developing SQL queries and APIs using NodeJS and Express. 
 * Improving the knowledge of remote database connections and role-based access control.
@@ -8,14 +14,14 @@
 * Practicing implementing role-based access control for specific actions.
 
 ## **Problem(s) solved:**
-* Developing APIs to extract the required information from a database to meet the functional requirements of a college scenario. 
+* Developing APIs to extract the required information from a database to meet the functional requirements. 
 * Providing a solution for implementing role-based access control to restrict access for specific actions based on user roles.
 
 ## **Takeaways:**
-* Creating SQL queries to extract the required information from a MySQL database. 
-* Gaining experience in using NodeJS and Express to create an API to support the functional requirements of a college scenario. 
-* Implementing role-based access control using middleware functions to restrict access to specific APIs based on user roles. 
-* Testing and demonstrating the functionalities of their APIs using Postman.
+* Creating SQL queries to extract the required information from PostgreSQL. 
+* Gaining experience in using NodeJS and Express to create an API to support the functional requirements. 
+* Implementing role-based access control using **middleware** functions to restrict access to specific APIs based on user roles. 
+* Testing and demonstrating the functionalities of their APIs using **Postman**.
 
 ## **Unique Features:**
 * Provides a practical example of developing SQL queries and APIs to support the functional requirements using Postgres DB. 
@@ -38,7 +44,7 @@ _Step 1: Setting up the project._
 
 >To generate JSON Web Tokens (JWT) for authentication: **jsonwebtoken**
 
-3.	Set up the PostgreSQL database (using pgAdmin4) and create the necessary tables and constraints.
+3.	Set up the PostgreSQL database and create the necessary tables and constraints.
 ---
 _Step 2: Creating the API endpoints:_
 * Define the required API endpoints for each functional requirement.
@@ -78,7 +84,7 @@ node index.js
 ```
 This will start the server.
 
-> To test if the server is running, open a web browser and enter the URL http://localhost:3000. If it is, the response specified in the route handler function (i.e., 'Hello World!') will be visible.
+> To test the server, open a web browser and enter the URL http://localhost:3000. If it is running, the response specified in the route handler function (i.e., 'Hello World!') will be visible.
 
 To test and demonstrate the results of executing the APIs using Postman:
 * Open Postman. In the top-left corner of the window, create a new request (click on "New").
