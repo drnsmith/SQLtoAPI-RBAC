@@ -7,7 +7,7 @@
 * Enhancing skills in developing APIs for functional requirements of using SQL queries and NodeJS. 
 * Practicing implementing role-based access control for specific actions.
 
-## **Problem(ss) solved:**
+## **Problem(s) solved:**
 * Developing APIs to extract the required information from a database to meet the functional requirements of a college scenario. 
 * Providing a solution for implementing role-based access control to restrict access for specific actions based on user roles.
 
